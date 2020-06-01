@@ -4,7 +4,7 @@ class AlertService {
         this.errorBox = document.getElementById("error");
     }
 
-    handleAdditionErorr(inputs, numbers) {
+    handleAdditionErorrs(inputs, numbers) {
 
         const fullMessage =  inputs.reduce((message, str, index) => {
             if (inputsAreValid[index])
@@ -24,6 +24,6 @@ class AlertService {
 
     hideErrors() {
         this.errorBox.classList.add("invisible");
-    }
+    };
 
 };

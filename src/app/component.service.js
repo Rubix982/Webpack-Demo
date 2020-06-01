@@ -1,4 +1,4 @@
-class Component {
+class ComponentService {
 
     constructor() {
         this.numberOneInput = document.getElementById("numberOne");
