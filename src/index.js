@@ -9,3 +9,4 @@ const alertService = new AlertService();
 const componentService = new ComponentService();
 
 run(alertService, componentService);
+console.log("Hi!");
