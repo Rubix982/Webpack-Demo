@@ -8,7 +8,7 @@ export class AlertService {
         this.errorBox = document.getElementById("error");
     }
 
-    handleAdditionErorrs(inputs, numbers) {
+    handleAdditionError(inputs, numbers) {
 
         const fullMessage =  inputs.reduce((message, str, index) => {
             if (inputsAreValid[index])
