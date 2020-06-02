@@ -6,6 +6,9 @@
   "main": "app/app.js",
   "scripts": {
     "start": "webpack --config webpack.config.js",
+    "prod": "webpack --config webpack.prod.js",
+    "dev": "webpack --config webpack.dev.js",
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +29,8 @@
   "devDependencies": {
     "bootstrap": "^4.5.0",
     "css-loader": "^3.5.3",
+    "eslint": "^7.1.0",
+    "eslint-config-google": "^0.14.0",
     "html-webpack-plugin": "^4.3.0",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
