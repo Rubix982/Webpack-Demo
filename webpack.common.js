@@ -3,7 +3,7 @@ const path = require("path");
 
 module.exports = {
     entry: "./src/index.js",
-    plugin: [
+    plugins: [
         new HtmlWebpackPlugin({
             template: "./src/template.html",
         }),
@@ -18,6 +18,22 @@ module.exports = {
                     "sass-loader" //1. Turns sass into css
                 ],
             },
+            {
+                test: /\.html$/,
+                use: [
+                    "html-loader"
+                ],
+            },
+            {
+                test: /\.(svg|png|jpg|jpeg|gif)$/,
+                use: {
+                    loader: "file-loader",
+                    options: {
+                        name: "[name].[hash].[ext]",
+                        outputPath: "imgs",
+                    }
+                },
+            }
         ],
     },
 };
