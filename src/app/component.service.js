@@ -1,4 +1,6 @@
-class ComponentService {
+"use strict";
+
+export class ComponentService {
 
     constructor() {
         this.numberOneInput = document.getElementById("numberOne");
