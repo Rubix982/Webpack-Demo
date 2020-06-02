@@ -4,7 +4,7 @@ export class ComponentService {
 
     constructor() {
         this.numberOneInput = document.getElementById("numberOne");
-        this.numberTwoInput = document.getElementById("numerTwo");
+        this.numberTwoInput = document.getElementById("numberTwo");
         this.resultbox = document.getElementById("result");
         this.addValuesButton = document.getElementById("addValues");
     }
